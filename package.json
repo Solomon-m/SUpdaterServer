@@ -43,7 +43,7 @@
     "dist": "build -w --x64",
     "release": "build"
   },
-  "version": "2.0.0",
+  "version": "3.0.0",
   "devDependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
