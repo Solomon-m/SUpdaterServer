@@ -24,7 +24,7 @@
     "squirrelWindows": {
       "iconUrl": "http://images.sb.a-cti.com/testing/solomon/images/updaterapp.ico",
       "remoteReleases": true,
-      "remoteToken": "9d72599dab195e8d0098b8ff5c833283c4e94ffc"
+      "remoteToken": "865b5056ad68c6aba312c56d9765049b35e6fb0c"
     }
   },
   "description": "updater test app",
@@ -43,11 +43,11 @@
     "dist": "build -w --x64",
     "release": "build"
   },
-  "version": "6.0.0",
+  "version": "7.0.0",
   "devDependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
