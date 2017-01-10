@@ -1,28 +1,51 @@
 {
-"name": "updatertest",
-"version": "1.0.0",
-"description": "updater test app",
-"main": "index.js",
-"scripts": {
-"start": "npm run start"
-},
-"repository": {
-"type": "git",
-"url": "git+https://github.com/Solomon-m/UpdateServer.git"
-},
-"author": "",
-"license": "ISC",
-"bugs": {
-"url": "https://github.com/Solomon-m/UpdateServer/issues"
-},
-"homepage": "https://github.com/Solomon-m/UpdateServer#readme"
-,
-"build": {
-"appId": "updatertest.id",
-"win": {
-"buildResources": "F:\\solomon\\files\\setups\\UpdateApp-win32-ia32\\resources\\app",
-"output":"F:\\solomon\\files\\exefiles",
-"app":"F:\\solomon\\files\\setups\\UpdateApp-win32-ia32\\resources\\app"
-}
-}
+  "author": "devsb",
+  "bugs": {
+    "url": "https://github.com/Solomon-m/SUpdaterServer/issues"
+  },
+  "build": {
+    "appId": "updatertest",
+    "productName": "UpdatertTest",
+    "asar": true,
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "publish": [
+        "github"
+      ],
+      "app": "F:\\solomon\\files\\setups\\UpdateApp-win32-ia32\\resources\\app",
+      "buildResources": "F:\\solomon\\files\\setups\\UpdateApp-win32-ia32\\resources\\app",
+      "output": "F:\\solomon\\files\\exefiles",
+      "target": "squirrel",
+      "certificate": "F:\\solomon\\sign\\sign.pkcs12",
+      "icon": "F:\\solomon\\files\\AW_install_icon.ico"
+    },
+    "squirrelWindows": {
+      "iconUrl": "http://images.sb.a-cti.com/testing/solomon/images/updaterapp.ico"
+    }
+  },
+  "description": "updater test app",
+  "homepage": "https://github.com/Solomon-m/SUpdaterServer#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "updatertest",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Solomon-m/SUpdaterServer.git"
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist": "build -w --x64",
+    "release": "build"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
 }
