@@ -22,7 +22,9 @@
       "icon": "F:\\solomon\\files\\AW_install_icon.ico"
     },
     "squirrelWindows": {
-      "iconUrl": "http://images.sb.a-cti.com/testing/solomon/images/updaterapp.ico"
+       "iconUrl": "http://images.sb.a-cti.com/testing/solomon/images/updaterapp.ico",
+       "remoteReleases":true,
+       "remoteToken":"0ed939c510a0f0096b5d76b7ce52f62efc8170c4"
     }
   },
   "description": "updater test app",
@@ -41,7 +43,7 @@
     "dist": "build -w --x64",
     "release": "build"
   },
-  "version": "1.0.0",
+  "version": "2.0.0",
   "devDependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
